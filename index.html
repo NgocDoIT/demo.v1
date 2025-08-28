@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Demo giao diện (Public)</title>
+    <link rel="stylesheet" href="assets/ui.css">
+    <style>
+      body{display:grid;place-items:center;min-height:100vh;background:#0f172a;margin:0}
+    </style>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script src="assets/ui.js"></script>
+    <script>
+      UIPrivate.renderProfileCard('app', {
+        name: 'Người dùng ví dụ',
+        avatar: 'https://i.pravatar.cc/150?img=3',
+        bio: 'Giao diện được đồng bộ từ repo riêng tư.'
+      });
+    </script>
+  </body>
+</html>
